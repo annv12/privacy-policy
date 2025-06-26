@@ -1,0 +1,44 @@
+@host = "https://melon.shibaton.org"
+@token= "adfadf"
+
+
+POST {{host}}/login 
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "username": "user_admin_melon_game",
+    "password": "JQg36WhRWecU5jmRzUdX@"
+}
+
+###
+# pack: "Pack_Basic" | "Pack_Standard" | "Pack_Power" | "Pack_Master" | "Pack_Legendary" | "Pack_Epic"
+POST {{host}}/buy-combo
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "chatId": "chatId1",
+    "pack": "Pack_Epic"
+}
+
+###
+# pack: "BUY_x5" | "BUY_x10" | "BUY_x20" | "BUY_x30" | "BUY_x100"
+POST {{host}}/buy-spin
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "chatId": "chatId1",
+    "pack": "BUY_x5"
+}
+###
+# pack: "Boost_16" | "Boost_24" | "Boost_48" 
+POST {{host}}/buy-boost
+Content-Type: application/json
+
+{
+    "chatId": "chatId1",
+    "pack": "Boost_16"
+}
+

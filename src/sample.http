@@ -1,0 +1,26 @@
+@access_token = EAAIAerQ8pf4BO32fNfVay2TLwTG4ZAZCH24LePEmOuPCmmkKh0jSTZAnqF3kSnZBCAYaaNttZA5VTis4THWfehssJwC1jWYr6N8m81z9TvM3QtAqYYh2ZCcVSG8JY6xncP6By3PfZAw614IGZA9q8T7Jy7Vn7FJHsCPnBFxd4WZCnPofrub5YEXezAd4YZAeQYe7v63ajgJUZAwhsXpjthfpIeNzhHgVq5oBrlcE26vwZCrhbjiwdjxOZCjZA45S0e01ng
+@page_token = EAAIAerQ8pf4BO4yAoBL9xuZC3n9JIO87fm3xYI8mZAzMs5UYmbwF1VyZB07oGUVqXvzqnrI3ZCubGlZCS4MavZA1XpceiEPPBQwIb9V0pyX8ZAh5w6PGfY52fqKwoZAYZBzppNZBGC66izDZAEHmcmnnyhhn4xDJaiD3c50tsMhPikxBSJjkpL8KjNMQEvyXqIXZCZA3E8IfIzZCmm
+@host = https://graph.facebook.com/v23.0
+
+
+###
+GET {{host}}/me/accounts?access_token={{access_token}}
+content-type: application/json
+
+###
+GET {{host}}/1893056474095809/feed?access_token={{page_token}}
+content-type: application/json
+
+-- curl -i -X GET "https://graph.facebook.com/v23.0/1455037328826976/feed?access_token=EAFW2lQ7pqh4BO8MXyZA83TZBQwvBCjOWeYkd3CG5xEVQejmiQiy50hgPzGLEKK3AX2z42QLFNT43ugyZAUp0XiZCznEuzzub6Gao9F0QeGoDmtV64ZBEJDrP1iKj9RZAqLQfv6MAc1Rc0YUlzPAx5Cy8cqIPfAinzIiAL4XTFc0dNXZBcfDcPWQD9tZBzGCwsnSPDmGnAdEl3ZBpRBNCw1i0mvelUlVZBkkXG0K6AWfWsw6ihLSIZArlT1ZBDBDMPPMiIGJx"
+
+-- rin
+-- curl -i -X GET "https://graph.facebook.com/v23.0/me/accounts?access_token=EAAIAerQ8pf4BOyBz0NsjPqpAaZBcl78glZCbIGyhywaQ8Omo3xEgUZCBuNgtVu4FxoyhMpZB1XZBvHWJJ007kImdvGWfuGiqkyrsKduyL9IpOylzAjDoqLsKtSWLFO5KPDMEptWnWOxkwi7XZCNGU5F67nPvitIO12DEzNF2xmYwvUEYkeheDAf0L71kNCtNZB3d2d1f0rqSgz55OD1VtDixqZCBm93Xuli5Cv5SmZCccQJHQCFamYZBx0naZCjZB9eB"
+-- curl -i -X GET "https://graph.facebook.com/v23.0/me/accounts?access_token=EAAIAerQ8pf4BOyBz0NsjPqpAaZBcl78glZCbIGyhywaQ8Omo3xEgUZCBuNgtVu4FxoyhMpZB1XZBvHWJJ007kImdvGWfuGiqkyrsKduyL9IpOylzAjDoqLsKtSWLFO5KPDMEptWnWOxkwi7XZCNGU5F67nPvitIO12DEzNF2xmYwvUEYkeheDAf0L71kNCtNZB3d2d1f0rqSgz55OD1VtDixqZCBm93Xuli5Cv5SmZCccQJHQCFamYZBx0naZCjZB9eB"
+-- curl -i -X GET "https://graph.facebook.com/v23.0/1893056474095809/feed?access_token=EAAIAerQ8pf4BO7aWD2nZB1Cc2SOHXQAwJZBSDcutKyOByyofplCqOtfAQg7FtTNkh3kihiLOsZCe7yZCEWYeX5obFxkVlxtqqTTch0QA9HyLVOyiZBZBu0dvwDCmx3neO09ckOCgL1UnjZAlmLuBp41MJCn9ZBuHZCMhO8IbjQ1VnTiv2yK815UanzKqI7UUH3taC6vBoAAoA"
+
+-- curl -i -X GET "https://graph.facebook.com/v23.0/1893056474095809_693158473342829/comments?access_token=EAAIAerQ8pf4BO7aWD2nZB1Cc2SOHXQAwJZBSDcutKyOByyofplCqOtfAQg7FtTNkh3kihiLOsZCe7yZCEWYeX5obFxkVlxtqqTTch0QA9HyLVOyiZBZBu0dvwDCmx3neO09ckOCgL1UnjZAlmLuBp41MJCn9ZBuHZCMhO8IbjQ1VnTiv2yK815UanzKqI7UUH3taC6vBoAAoA"
+
+
+-- curl -i -X POST "https://graph.facebook.com/v23.0/1893056474095809_693158473342829/comments?access_token=EAAIAerQ8pf4BOyBz0NsjPqpAaZBcl78glZCbIGyhywaQ8Omo3xEgUZCBuNgtVu4FxoyhMpZB1XZBvHWJJ007kImdvGWfuGiqkyrsKduyL9IpOylzAjDoqLsKtSWLFO5KPDMEptWnWOxkwi7XZCNGU5F67nPvitIO12DEzNF2xmYwvUEYkeheDAf0L71kNCtNZB3d2d1f0rqSgz55OD1VtDixqZCBm93Xuli5Cv5SmZCccQJHQCFamYZBx0naZCjZB9eB" \
+--      -H "Content-Type: application/json" \
+--      -d '{"message":"test api 3",}'
